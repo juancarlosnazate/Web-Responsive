@@ -1,0 +1,195 @@
+body{
+	font-family: "Dancing Script";
+	background-color: #02010a;
+
+}
+header {
+	background-color: #5b7989;
+	height: 30px;
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	padding: 20px 0;
+	animation: slide 1s;
+
+	}
+
+img{
+filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+.titulo{
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	float: left;
+	margin: 10px;
+
+}
+.menu {
+	float: right;
+	margin: 10px;
+}
+.menu a {
+	color: white;
+}
+.inicio {
+	text-decoration: none;
+}
+.paisajes {
+	text-decoration: none;
+}
+.retratos {
+	text-decoration: none;
+}
+
+/*SEGUNDA PARTE*/
+#imagencentral{
+	background-color: #82c3a6;
+	padding: 10px;
+	display: flex;
+	justify-content:space-around;
+}
+#imagencentral img{
+	width: 50%;
+	height: 50%;
+}
+
+/*TERCERA PARTE*/
+.contenedor{
+	background-color: #d5c75f;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	text-align: center;
+}
+.contenedor img{	
+	width: 50%;	
+}
+
+
+@media (max-width: 900px){
+	.contenedor{
+		display: flex;
+		flex-direction: column;
+	}
+	.contenedor img{	
+	width: 50%;	
+	}
+}
+
+.moray:hover{
+	transform: rotate(10grad);
+}
+.moray{
+	border: 2px solid;
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+
+
+
+.ruinas:hover{
+	transform: translate(20px, -5px);
+}
+.ruinas{
+	border: 2px solid;
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+/*CUARTA PARTE*/
+.contenedor2{
+	background-color: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+}
+.icono{
+	width: 20px;
+	vertical-align: middle;
+	margin: 7px;
+}
+@media (max-width: 900px){
+	.contenedor2{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/*PAGINA PAISAJES*/
+.contenedor3{
+	background-color: #d5c75f;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	text-align: center;
+}
+.contenedor3 img{	
+	width: 50%;	
+}
+@media (max-width: 900px){
+	.contenedor3{
+		display: flex;
+		flex-direction: column;
+	}
+}
+.moray1{
+	filter: blur(10px);
+}
+.moray2{
+	filter: grayscale(100%);
+}
+.moray3{
+	filter: sepia(90%);
+}
+
+
+/*PAGINA RETRATOS*/
+.contenedor4{
+	background-color: #d5c75f;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	text-align: center;
+}
+.contenedor4 img{	
+	width: 50%;	
+}
+@media (max-width: 900px){
+	.contenedor4{
+		display: flex;
+		flex-direction: column;
+	}
+}
+.ruinas1{
+	filter: blur(10px);
+}
+.ruinas2{
+	filter: grayscale(100%);
+}
+.ruinas3{
+	filter: sepia(90%);
+}
+
+/*REQUERIMIENTOS ADICIONALES*/
+@media (max-width: 900px){
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content:space-around;
+		text-align: center;
+	}
+}
+@keyframes slide {
+	0%	 {
+		margin-top: 150%;
+	}
+	60%	 {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+
